@@ -8,6 +8,7 @@ import { AuthProvider } from '../auth/hooks/useAuth'
 const LoadingFallback = () => <div>Cargando....</div>
 
 // Carga diferida de los módulos
+const LadingPage = lazy(() => import('../ladingPage/LadingPage'))
 const AuthRoutes = lazy(() => import('../auth/router/index'))
 const DashboardRoutes = lazy(() => import('../dashboard/router/index'))
 
@@ -18,6 +19,11 @@ const AppRoutes = () => {
                 <Suspense fallback={<LoadingFallback />}>
                     <Routes>
                         
+                        {/* Página de inicio (LandingPage) */}
+                        <Route element={<PublicRoute />}>
+                            <Route path="/" element={<LadingPage />} />
+                        </Route>
+
                         {/* Rutas públicas */}
                         <Route element={<PublicRoute />}>
                             <Route path="/auth/*" element={<AuthRoutes />} />
@@ -30,7 +36,7 @@ const AppRoutes = () => {
                         </Route>
 
                         {/* Ruta por defecto */}
-                        <Route path="*" element={<Navigate to="/auth" replace />} />
+                        <Route path="*" element={<Navigate to="/" replace />} />
                     </Routes>
                 </Suspense>
             </AuthProvider>

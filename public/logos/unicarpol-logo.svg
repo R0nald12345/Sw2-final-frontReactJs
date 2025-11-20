@@ -1,0 +1,59 @@
+<svg viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#f5f5f5" stroke="#e0e0e0" stroke-width="2"/>
+  
+  <!-- Graduation cap -->
+  <g id="graduate">
+    <path d="M 50 70 L 65 50 L 80 65 L 65 75 Z" fill="#1a0d7a" stroke="#1a0d7a" stroke-width="1.5"/>
+    <circle cx="65" cy="75" r="8" fill="#1a0d7a"/>
+  </g>
+  
+  <!-- Person 1 (middle) -->
+  <g id="person1">
+    <circle cx="100" cy="60" r="12" fill="#1a0d7a"/>
+    <path d="M 92 75 L 92 95 M 100 75 L 100 100 M 108 75 L 108 95 M 94 88 L 106 88" 
+          stroke="#1a0d7a" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Person 2 (right) -->
+  <g id="person2">
+    <circle cx="140" cy="60" r="12" fill="#1a0d7a"/>
+    <path d="M 132 75 L 132 95 M 140 75 L 140 100 M 148 75 L 148 95 M 134 88 L 146 88" 
+          stroke="#1a0d7a" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Car -->
+  <g id="car">
+    <!-- Car body -->
+    <path d="M 55 130 Q 50 115 70 110 L 130 110 Q 150 115 145 130 Z" 
+          fill="#1a0d7a" stroke="#1a0d7a" stroke-width="2"/>
+    
+    <!-- Car top -->
+    <path d="M 75 110 L 75 95 Q 75 90 80 90 L 120 90 Q 125 90 125 95 L 125 110" 
+          fill="#1a0d7a" stroke="#1a0d7a" stroke-width="2"/>
+    
+    <!-- Windows -->
+    <rect x="82" y="93" width="16" height="14" fill="#e8f4ff" stroke="none"/>
+    <rect x="102" y="93" width="16" height="14" fill="#e8f4ff" stroke="none"/>
+    
+    <!-- Headlights -->
+    <circle cx="62" cy="127" r="5" fill="#ffffff" stroke="#1a0d7a" stroke-width="1"/>
+    <circle cx="138" cy="127" r="5" fill="#ffffff" stroke="#1a0d7a" stroke-width="1"/>
+    
+    <!-- Wheels -->
+    <circle cx="75" cy="140" r="8" fill="#1a0d7a" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="125" cy="140" r="8" fill="#1a0d7a" stroke="#ffffff" stroke-width="2"/>
+    
+    <!-- Wheel details -->
+    <circle cx="75" cy="140" r="5" fill="none" stroke="#ffffff" stroke-width="1"/>
+    <circle cx="125" cy="140" r="5" fill="none" stroke="#ffffff" stroke-width="1"/>
+  </g>
+  
+  <!-- Text UNICARPOL -->
+  <text x="100" y="200" font-family="Arial, sans-serif" font-size="28" font-weight="bold" 
+        text-anchor="middle" fill="#1a0d7a">UNICARPOL</text>
+  
+  <!-- Subtitle -->
+  <text x="100" y="220" font-family="Arial, sans-serif" font-size="10" 
+        text-anchor="middle" fill="#666666">Movilidad Universitaria</text>
+</svg>
