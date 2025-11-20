@@ -25,11 +25,14 @@ const LoginPage = () => {
 
   const onSubmit = async (data) => {
     try {
-      await login(data); // Tu contexto espera un objeto { email, password }
-      navigate("/dashboard"); // Redirige al dashboard si el login es exitoso
+      // Intenta loguearse
+      await login(data);
+      // Si el login es exitoso, redirige al dashboard
+      navigate("/dashboard");
     } catch (error) {
-      // El error ya es mostrado por SweetAlert, pero puedes mostrar un error general si quieres
-      setError("root", { message: "Credenciales incorrectas o error de red." });
+      // Incluso si hay error, redirige al dashboard (según tu solicitud)
+      console.error('Error en login:', error);
+      navigate("/dashboard");
     }
   };
 
